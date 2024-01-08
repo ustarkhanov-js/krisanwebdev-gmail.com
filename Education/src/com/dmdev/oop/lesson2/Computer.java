@@ -1,11 +1,11 @@
 package com.dmdev.oop.lesson2;
 
 public class Computer {
-    int ssd;
+    private int ssd;
 
-    int ram;
+    private int ram;
 
-    Computer() {
+    public Computer() {
         System.out.println("Я был создан");
     }
 
