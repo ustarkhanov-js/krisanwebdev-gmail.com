@@ -2,11 +2,16 @@ package com.dmdev.oop.lesson2;
 
 public class ComputerRunner {
     public static void main(String[] args) {
-        Computer computer = new Computer();
+        Computer computer = new Computer(2048);
 
-        computer.load();
+        computer.printState();
 
-        System.out.println("RAM: " + computer.ram);
-        System.out.println("SSD: " + computer.ssd);
+        Computer computer1 = new Computer();
+
+        computer1.printState();
+
+        Computer computer2 = new Computer(1025, 3330);
+
+        computer2.printState();
     }
 }
